@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAB61705214A92E6006D5F7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB61704214A92E6006D5F7A /* AppDelegate.m */; };
+		DAB61708214A92E6006D5F7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB61707214A92E6006D5F7A /* ViewController.m */; };
+		DAB6170B214A92E6006D5F7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB61709214A92E6006D5F7A /* Main.storyboard */; };
+		DAB6170D214A92E9006D5F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB6170C214A92E9006D5F7A /* Assets.xcassets */; };
+		DAB61710214A92E9006D5F7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB6170E214A92E9006D5F7A /* LaunchScreen.storyboard */; };
+		DAB61713214A92E9006D5F7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB61712214A92E9006D5F7A /* main.m */; };
+		DAB6171D214A92E9006D5F7A /* WJDebugToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB6171C214A92E9006D5F7A /* WJDebugToolTests.m */; };
+		DAB61728214A92E9006D5F7A /* WJDebugToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB61727214A92E9006D5F7A /* WJDebugToolUITests.m */; };
+		DAB61738214A93CB006D5F7A /* WJDebugManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB61737214A93CB006D5F7A /* WJDebugManager.m */; };
+		DAB6173B214A9418006D5F7A /* WJDebugModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB6173A214A9418006D5F7A /* WJDebugModel.m */; };
+		DAB6173E214A9432006D5F7A /* WJDebugDB.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB6173D214A9432006D5F7A /* WJDebugDB.m */; };
+		DAB6174C214B6041006D5F7A /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB61741214B6041006D5F7A /* FMDatabaseQueue.m */; };
+		DAB6174D214B6041006D5F7A /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB61744214B6041006D5F7A /* FMDatabaseAdditions.m */; };
+		DAB6174E214B6041006D5F7A /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB61745214B6041006D5F7A /* FMDatabase.m */; };
+		DAB6174F214B6041006D5F7A /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB61749214B6041006D5F7A /* FMDatabasePool.m */; };
+		DAB61750214B6041006D5F7A /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB6174A214B6041006D5F7A /* FMResultSet.m */; };
+		DAB61751214B6041006D5F7A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAB6174B214B6041006D5F7A /* Info.plist */; };
+		DAB61754214B60B5006D5F7A /* WJDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB61753214B60B5006D5F7A /* WJDBManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAB61719214A92E9006D5F7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAB616F8214A92E5006D5F7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAB616FF214A92E6006D5F7A;
+			remoteInfo = WJDebugTool;
+		};
+		DAB61724214A92E9006D5F7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAB616F8214A92E5006D5F7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAB616FF214A92E6006D5F7A;
+			remoteInfo = WJDebugTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DAB61700214A92E6006D5F7A /* WJDebugTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WJDebugTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB61703214A92E6006D5F7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DAB61704214A92E6006D5F7A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DAB61706214A92E6006D5F7A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DAB61707214A92E6006D5F7A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DAB6170A214A92E6006D5F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAB6170C214A92E9006D5F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAB6170F214A92E9006D5F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAB61711214A92E9006D5F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB61712214A92E9006D5F7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAB61718214A92E9006D5F7A /* WJDebugToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WJDebugToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB6171C214A92E9006D5F7A /* WJDebugToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJDebugToolTests.m; sourceTree = "<group>"; };
+		DAB6171E214A92E9006D5F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB61723214A92E9006D5F7A /* WJDebugToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WJDebugToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB61727214A92E9006D5F7A /* WJDebugToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJDebugToolUITests.m; sourceTree = "<group>"; };
+		DAB61729214A92E9006D5F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB61736214A93CB006D5F7A /* WJDebugManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDebugManager.h; sourceTree = "<group>"; };
+		DAB61737214A93CB006D5F7A /* WJDebugManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJDebugManager.m; sourceTree = "<group>"; };
+		DAB61739214A9418006D5F7A /* WJDebugModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDebugModel.h; sourceTree = "<group>"; };
+		DAB6173A214A9418006D5F7A /* WJDebugModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJDebugModel.m; sourceTree = "<group>"; };
+		DAB6173C214A9432006D5F7A /* WJDebugDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDebugDB.h; sourceTree = "<group>"; };
+		DAB6173D214A9432006D5F7A /* WJDebugDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJDebugDB.m; sourceTree = "<group>"; };
+		DAB61740214B6041006D5F7A /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		DAB61741214B6041006D5F7A /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		DAB61742214B6041006D5F7A /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		DAB61743214B6041006D5F7A /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		DAB61744214B6041006D5F7A /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		DAB61745214B6041006D5F7A /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		DAB61746214B6041006D5F7A /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		DAB61747214B6041006D5F7A /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		DAB61748214B6041006D5F7A /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		DAB61749214B6041006D5F7A /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		DAB6174A214B6041006D5F7A /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		DAB6174B214B6041006D5F7A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB61752214B60B5006D5F7A /* WJDBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDBManager.h; sourceTree = "<group>"; };
+		DAB61753214B60B5006D5F7A /* WJDBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJDBManager.m; sourceTree = "<group>"; };
+		DAB61755214B9474006D5F7A /* WJDebugConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDebugConst.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAB616FD214A92E6006D5F7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB61715214A92E9006D5F7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB61720214A92E9006D5F7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAB616F7214A92E5006D5F7A = {
+			isa = PBXGroup;
+			children = (
+				DAB61702214A92E6006D5F7A /* WJDebugTool */,
+				DAB6171B214A92E9006D5F7A /* WJDebugToolTests */,
+				DAB61726214A92E9006D5F7A /* WJDebugToolUITests */,
+				DAB61701214A92E6006D5F7A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAB61701214A92E6006D5F7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAB61700214A92E6006D5F7A /* WJDebugTool.app */,
+				DAB61718214A92E9006D5F7A /* WJDebugToolTests.xctest */,
+				DAB61723214A92E9006D5F7A /* WJDebugToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAB61702214A92E6006D5F7A /* WJDebugTool */ = {
+			isa = PBXGroup;
+			children = (
+				DAB6173F214B6041006D5F7A /* fmdb */,
+				DAB61735214A9372006D5F7A /* Deubug */,
+				DAB61703214A92E6006D5F7A /* AppDelegate.h */,
+				DAB61704214A92E6006D5F7A /* AppDelegate.m */,
+				DAB61706214A92E6006D5F7A /* ViewController.h */,
+				DAB61707214A92E6006D5F7A /* ViewController.m */,
+				DAB61709214A92E6006D5F7A /* Main.storyboard */,
+				DAB6170C214A92E9006D5F7A /* Assets.xcassets */,
+				DAB6170E214A92E9006D5F7A /* LaunchScreen.storyboard */,
+				DAB61711214A92E9006D5F7A /* Info.plist */,
+				DAB61712214A92E9006D5F7A /* main.m */,
+			);
+			path = WJDebugTool;
+			sourceTree = "<group>";
+		};
+		DAB6171B214A92E9006D5F7A /* WJDebugToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAB6171C214A92E9006D5F7A /* WJDebugToolTests.m */,
+				DAB6171E214A92E9006D5F7A /* Info.plist */,
+			);
+			path = WJDebugToolTests;
+			sourceTree = "<group>";
+		};
+		DAB61726214A92E9006D5F7A /* WJDebugToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAB61727214A92E9006D5F7A /* WJDebugToolUITests.m */,
+				DAB61729214A92E9006D5F7A /* Info.plist */,
+			);
+			path = WJDebugToolUITests;
+			sourceTree = "<group>";
+		};
+		DAB61735214A9372006D5F7A /* Deubug */ = {
+			isa = PBXGroup;
+			children = (
+				DAB61736214A93CB006D5F7A /* WJDebugManager.h */,
+				DAB61755214B9474006D5F7A /* WJDebugConst.h */,
+				DAB61737214A93CB006D5F7A /* WJDebugManager.m */,
+				DAB61739214A9418006D5F7A /* WJDebugModel.h */,
+				DAB6173A214A9418006D5F7A /* WJDebugModel.m */,
+				DAB6173C214A9432006D5F7A /* WJDebugDB.h */,
+				DAB6173D214A9432006D5F7A /* WJDebugDB.m */,
+				DAB61752214B60B5006D5F7A /* WJDBManager.h */,
+				DAB61753214B60B5006D5F7A /* WJDBManager.m */,
+			);
+			path = Deubug;
+			sourceTree = "<group>";
+		};
+		DAB6173F214B6041006D5F7A /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				DAB61740214B6041006D5F7A /* FMDatabase.h */,
+				DAB61741214B6041006D5F7A /* FMDatabaseQueue.m */,
+				DAB61742214B6041006D5F7A /* FMResultSet.h */,
+				DAB61743214B6041006D5F7A /* FMDatabasePool.h */,
+				DAB61744214B6041006D5F7A /* FMDatabaseAdditions.m */,
+				DAB61745214B6041006D5F7A /* FMDatabase.m */,
+				DAB61746214B6041006D5F7A /* FMDatabaseQueue.h */,
+				DAB61747214B6041006D5F7A /* FMDB.h */,
+				DAB61748214B6041006D5F7A /* FMDatabaseAdditions.h */,
+				DAB61749214B6041006D5F7A /* FMDatabasePool.m */,
+				DAB6174A214B6041006D5F7A /* FMResultSet.m */,
+				DAB6174B214B6041006D5F7A /* Info.plist */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAB616FF214A92E6006D5F7A /* WJDebugTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAB6172C214A92E9006D5F7A /* Build configuration list for PBXNativeTarget "WJDebugTool" */;
+			buildPhases = (
+				DAB616FC214A92E6006D5F7A /* Sources */,
+				DAB616FD214A92E6006D5F7A /* Frameworks */,
+				DAB616FE214A92E6006D5F7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WJDebugTool;
+			productName = WJDebugTool;
+			productReference = DAB61700214A92E6006D5F7A /* WJDebugTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAB61717214A92E9006D5F7A /* WJDebugToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAB6172F214A92E9006D5F7A /* Build configuration list for PBXNativeTarget "WJDebugToolTests" */;
+			buildPhases = (
+				DAB61714214A92E9006D5F7A /* Sources */,
+				DAB61715214A92E9006D5F7A /* Frameworks */,
+				DAB61716214A92E9006D5F7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAB6171A214A92E9006D5F7A /* PBXTargetDependency */,
+			);
+			name = WJDebugToolTests;
+			productName = WJDebugToolTests;
+			productReference = DAB61718214A92E9006D5F7A /* WJDebugToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAB61722214A92E9006D5F7A /* WJDebugToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAB61732214A92E9006D5F7A /* Build configuration list for PBXNativeTarget "WJDebugToolUITests" */;
+			buildPhases = (
+				DAB6171F214A92E9006D5F7A /* Sources */,
+				DAB61720214A92E9006D5F7A /* Frameworks */,
+				DAB61721214A92E9006D5F7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAB61725214A92E9006D5F7A /* PBXTargetDependency */,
+			);
+			name = WJDebugToolUITests;
+			productName = WJDebugToolUITests;
+			productReference = DAB61723214A92E9006D5F7A /* WJDebugToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAB616F8214A92E5006D5F7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "王俊";
+				TargetAttributes = {
+					DAB616FF214A92E6006D5F7A = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					DAB61717214A92E9006D5F7A = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = DAB616FF214A92E6006D5F7A;
+					};
+					DAB61722214A92E9006D5F7A = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = DAB616FF214A92E6006D5F7A;
+					};
+				};
+			};
+			buildConfigurationList = DAB616FB214A92E5006D5F7A /* Build configuration list for PBXProject "WJDebugTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAB616F7214A92E5006D5F7A;
+			productRefGroup = DAB61701214A92E6006D5F7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAB616FF214A92E6006D5F7A /* WJDebugTool */,
+				DAB61717214A92E9006D5F7A /* WJDebugToolTests */,
+				DAB61722214A92E9006D5F7A /* WJDebugToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAB616FE214A92E6006D5F7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB61751214B6041006D5F7A /* Info.plist in Resources */,
+				DAB61710214A92E9006D5F7A /* LaunchScreen.storyboard in Resources */,
+				DAB6170D214A92E9006D5F7A /* Assets.xcassets in Resources */,
+				DAB6170B214A92E6006D5F7A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB61716214A92E9006D5F7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB61721214A92E9006D5F7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAB616FC214A92E6006D5F7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB6173E214A9432006D5F7A /* WJDebugDB.m in Sources */,
+				DAB61708214A92E6006D5F7A /* ViewController.m in Sources */,
+				DAB61754214B60B5006D5F7A /* WJDBManager.m in Sources */,
+				DAB6173B214A9418006D5F7A /* WJDebugModel.m in Sources */,
+				DAB6174E214B6041006D5F7A /* FMDatabase.m in Sources */,
+				DAB6174C214B6041006D5F7A /* FMDatabaseQueue.m in Sources */,
+				DAB61713214A92E9006D5F7A /* main.m in Sources */,
+				DAB61738214A93CB006D5F7A /* WJDebugManager.m in Sources */,
+				DAB6174F214B6041006D5F7A /* FMDatabasePool.m in Sources */,
+				DAB61750214B6041006D5F7A /* FMResultSet.m in Sources */,
+				DAB61705214A92E6006D5F7A /* AppDelegate.m in Sources */,
+				DAB6174D214B6041006D5F7A /* FMDatabaseAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB61714214A92E9006D5F7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB6171D214A92E9006D5F7A /* WJDebugToolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB6171F214A92E9006D5F7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB61728214A92E9006D5F7A /* WJDebugToolUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAB6171A214A92E9006D5F7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAB616FF214A92E6006D5F7A /* WJDebugTool */;
+			targetProxy = DAB61719214A92E9006D5F7A /* PBXContainerItemProxy */;
+		};
+		DAB61725214A92E9006D5F7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAB616FF214A92E6006D5F7A /* WJDebugTool */;
+			targetProxy = DAB61724214A92E9006D5F7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAB61709214A92E6006D5F7A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAB6170A214A92E6006D5F7A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAB6170E214A92E9006D5F7A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAB6170F214A92E9006D5F7A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAB6172A214A92E9006D5F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DAB6172B214A92E9006D5F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAB6172D214A92E9006D5F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WREVM94QNS;
+				INFOPLIST_FILE = WJDebugTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = myProject.WJDebugTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAB6172E214A92E9006D5F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WREVM94QNS;
+				INFOPLIST_FILE = WJDebugTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = myProject.WJDebugTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DAB61730214A92E9006D5F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WREVM94QNS;
+				INFOPLIST_FILE = WJDebugToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = myProject.WJDebugToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WJDebugTool.app/WJDebugTool";
+			};
+			name = Debug;
+		};
+		DAB61731214A92E9006D5F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WREVM94QNS;
+				INFOPLIST_FILE = WJDebugToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = myProject.WJDebugToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WJDebugTool.app/WJDebugTool";
+			};
+			name = Release;
+		};
+		DAB61733214A92E9006D5F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WREVM94QNS;
+				INFOPLIST_FILE = WJDebugToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = myProject.WJDebugToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WJDebugTool;
+			};
+			name = Debug;
+		};
+		DAB61734214A92E9006D5F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WREVM94QNS;
+				INFOPLIST_FILE = WJDebugToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = myProject.WJDebugToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WJDebugTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAB616FB214A92E5006D5F7A /* Build configuration list for PBXProject "WJDebugTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB6172A214A92E9006D5F7A /* Debug */,
+				DAB6172B214A92E9006D5F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAB6172C214A92E9006D5F7A /* Build configuration list for PBXNativeTarget "WJDebugTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB6172D214A92E9006D5F7A /* Debug */,
+				DAB6172E214A92E9006D5F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAB6172F214A92E9006D5F7A /* Build configuration list for PBXNativeTarget "WJDebugToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB61730214A92E9006D5F7A /* Debug */,
+				DAB61731214A92E9006D5F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAB61732214A92E9006D5F7A /* Build configuration list for PBXNativeTarget "WJDebugToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB61733214A92E9006D5F7A /* Debug */,
+				DAB61734214A92E9006D5F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAB616F8214A92E5006D5F7A /* Project object */;
+}
