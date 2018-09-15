@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAB61764214BA23E006D5F7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB61763214BA23E006D5F7A /* AppDelegate.m */; };
+		DAB61767214BA23E006D5F7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB61766214BA23E006D5F7A /* ViewController.m */; };
+		DAB6176A214BA23E006D5F7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB61768214BA23E006D5F7A /* Main.storyboard */; };
+		DAB6176C214BA240006D5F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB6176B214BA240006D5F7A /* Assets.xcassets */; };
+		DAB6176F214BA240006D5F7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB6176D214BA240006D5F7A /* LaunchScreen.storyboard */; };
+		DAB61772214BA240006D5F7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB61771214BA240006D5F7A /* main.m */; };
+		DAB6177C214BA240006D5F7A /* WJLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB6177B214BA240006D5F7A /* WJLogTests.m */; };
+		DAB61787214BA240006D5F7A /* WJLogUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB61786214BA240006D5F7A /* WJLogUITests.m */; };
+		DAB617A1214BA26A006D5F7A /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB61796214BA26A006D5F7A /* FMDatabaseQueue.m */; };
+		DAB617A2214BA26A006D5F7A /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB61799214BA26A006D5F7A /* FMDatabaseAdditions.m */; };
+		DAB617A3214BA26A006D5F7A /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB6179A214BA26A006D5F7A /* FMDatabase.m */; };
+		DAB617A4214BA26A006D5F7A /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB6179E214BA26A006D5F7A /* FMDatabasePool.m */; };
+		DAB617A5214BA26A006D5F7A /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB6179F214BA26A006D5F7A /* FMResultSet.m */; };
+		DAB617A6214BA26A006D5F7A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAB617A0214BA26A006D5F7A /* Info.plist */; };
+		DAB617B1214BA274006D5F7A /* WJDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB617A9214BA274006D5F7A /* WJDBManager.m */; };
+		DAB617B2214BA274006D5F7A /* WJLogDB.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB617AB214BA274006D5F7A /* WJLogDB.m */; };
+		DAB617B3214BA274006D5F7A /* WJLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB617AE214BA274006D5F7A /* WJLogModel.m */; };
+		DAB617B4214BA274006D5F7A /* WJLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB617AF214BA274006D5F7A /* WJLogManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAB61778214BA240006D5F7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAB61757214BA23E006D5F7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAB6175E214BA23E006D5F7A;
+			remoteInfo = WJLog;
+		};
+		DAB61783214BA240006D5F7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAB61757214BA23E006D5F7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAB6175E214BA23E006D5F7A;
+			remoteInfo = WJLog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DAB6175F214BA23E006D5F7A /* WJLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WJLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB61762214BA23E006D5F7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DAB61763214BA23E006D5F7A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DAB61765214BA23E006D5F7A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DAB61766214BA23E006D5F7A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DAB61769214BA23E006D5F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAB6176B214BA240006D5F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAB6176E214BA240006D5F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAB61770214BA240006D5F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB61771214BA240006D5F7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAB61777214BA240006D5F7A /* WJLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WJLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB6177B214BA240006D5F7A /* WJLogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJLogTests.m; sourceTree = "<group>"; };
+		DAB6177D214BA240006D5F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB61782214BA240006D5F7A /* WJLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WJLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB61786214BA240006D5F7A /* WJLogUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJLogUITests.m; sourceTree = "<group>"; };
+		DAB61788214BA240006D5F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB61795214BA26A006D5F7A /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		DAB61796214BA26A006D5F7A /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		DAB61797214BA26A006D5F7A /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		DAB61798214BA26A006D5F7A /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		DAB61799214BA26A006D5F7A /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		DAB6179A214BA26A006D5F7A /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		DAB6179B214BA26A006D5F7A /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		DAB6179C214BA26A006D5F7A /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		DAB6179D214BA26A006D5F7A /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		DAB6179E214BA26A006D5F7A /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		DAB6179F214BA26A006D5F7A /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		DAB617A0214BA26A006D5F7A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB617A8214BA274006D5F7A /* WJLogModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJLogModel.h; sourceTree = "<group>"; };
+		DAB617A9214BA274006D5F7A /* WJDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJDBManager.m; sourceTree = "<group>"; };
+		DAB617AA214BA274006D5F7A /* WJLogConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJLogConst.h; sourceTree = "<group>"; };
+		DAB617AB214BA274006D5F7A /* WJLogDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJLogDB.m; sourceTree = "<group>"; };
+		DAB617AC214BA274006D5F7A /* WJLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJLogManager.h; sourceTree = "<group>"; };
+		DAB617AD214BA274006D5F7A /* WJDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJDBManager.h; sourceTree = "<group>"; };
+		DAB617AE214BA274006D5F7A /* WJLogModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJLogModel.m; sourceTree = "<group>"; };
+		DAB617AF214BA274006D5F7A /* WJLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJLogManager.m; sourceTree = "<group>"; };
+		DAB617B0214BA274006D5F7A /* WJLogDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJLogDB.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAB6175C214BA23E006D5F7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB61774214BA240006D5F7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB6177F214BA240006D5F7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAB61756214BA23E006D5F7A = {
+			isa = PBXGroup;
+			children = (
+				DAB61761214BA23E006D5F7A /* WJLog */,
+				DAB6177A214BA240006D5F7A /* WJLogTests */,
+				DAB61785214BA240006D5F7A /* WJLogUITests */,
+				DAB61760214BA23E006D5F7A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAB61760214BA23E006D5F7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAB6175F214BA23E006D5F7A /* WJLog.app */,
+				DAB61777214BA240006D5F7A /* WJLogTests.xctest */,
+				DAB61782214BA240006D5F7A /* WJLogUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAB61761214BA23E006D5F7A /* WJLog */ = {
+			isa = PBXGroup;
+			children = (
+				DAB617A7214BA274006D5F7A /* Deubug */,
+				DAB61794214BA26A006D5F7A /* fmdb */,
+				DAB61762214BA23E006D5F7A /* AppDelegate.h */,
+				DAB61763214BA23E006D5F7A /* AppDelegate.m */,
+				DAB61765214BA23E006D5F7A /* ViewController.h */,
+				DAB61766214BA23E006D5F7A /* ViewController.m */,
+				DAB61768214BA23E006D5F7A /* Main.storyboard */,
+				DAB6176B214BA240006D5F7A /* Assets.xcassets */,
+				DAB6176D214BA240006D5F7A /* LaunchScreen.storyboard */,
+				DAB61770214BA240006D5F7A /* Info.plist */,
+				DAB61771214BA240006D5F7A /* main.m */,
+			);
+			path = WJLog;
+			sourceTree = "<group>";
+		};
+		DAB6177A214BA240006D5F7A /* WJLogTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAB6177B214BA240006D5F7A /* WJLogTests.m */,
+				DAB6177D214BA240006D5F7A /* Info.plist */,
+			);
+			path = WJLogTests;
+			sourceTree = "<group>";
+		};
+		DAB61785214BA240006D5F7A /* WJLogUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAB61786214BA240006D5F7A /* WJLogUITests.m */,
+				DAB61788214BA240006D5F7A /* Info.plist */,
+			);
+			path = WJLogUITests;
+			sourceTree = "<group>";
+		};
+		DAB61794214BA26A006D5F7A /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				DAB61795214BA26A006D5F7A /* FMDatabase.h */,
+				DAB61796214BA26A006D5F7A /* FMDatabaseQueue.m */,
+				DAB61797214BA26A006D5F7A /* FMResultSet.h */,
+				DAB61798214BA26A006D5F7A /* FMDatabasePool.h */,
+				DAB61799214BA26A006D5F7A /* FMDatabaseAdditions.m */,
+				DAB6179A214BA26A006D5F7A /* FMDatabase.m */,
+				DAB6179B214BA26A006D5F7A /* FMDatabaseQueue.h */,
+				DAB6179C214BA26A006D5F7A /* FMDB.h */,
+				DAB6179D214BA26A006D5F7A /* FMDatabaseAdditions.h */,
+				DAB6179E214BA26A006D5F7A /* FMDatabasePool.m */,
+				DAB6179F214BA26A006D5F7A /* FMResultSet.m */,
+				DAB617A0214BA26A006D5F7A /* Info.plist */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		DAB617A7214BA274006D5F7A /* Deubug */ = {
+			isa = PBXGroup;
+			children = (
+				DAB617A8214BA274006D5F7A /* WJLogModel.h */,
+				DAB617AE214BA274006D5F7A /* WJLogModel.m */,
+				DAB617AA214BA274006D5F7A /* WJLogConst.h */,
+				DAB617AC214BA274006D5F7A /* WJLogManager.h */,
+				DAB617AF214BA274006D5F7A /* WJLogManager.m */,
+				DAB617AD214BA274006D5F7A /* WJDBManager.h */,
+				DAB617A9214BA274006D5F7A /* WJDBManager.m */,
+				DAB617B0214BA274006D5F7A /* WJLogDB.h */,
+				DAB617AB214BA274006D5F7A /* WJLogDB.m */,
+			);
+			path = Deubug;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAB6175E214BA23E006D5F7A /* WJLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAB6178B214BA240006D5F7A /* Build configuration list for PBXNativeTarget "WJLog" */;
+			buildPhases = (
+				DAB6175B214BA23E006D5F7A /* Sources */,
+				DAB6175C214BA23E006D5F7A /* Frameworks */,
+				DAB6175D214BA23E006D5F7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WJLog;
+			productName = WJLog;
+			productReference = DAB6175F214BA23E006D5F7A /* WJLog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAB61776214BA240006D5F7A /* WJLogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAB6178E214BA240006D5F7A /* Build configuration list for PBXNativeTarget "WJLogTests" */;
+			buildPhases = (
+				DAB61773214BA240006D5F7A /* Sources */,
+				DAB61774214BA240006D5F7A /* Frameworks */,
+				DAB61775214BA240006D5F7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAB61779214BA240006D5F7A /* PBXTargetDependency */,
+			);
+			name = WJLogTests;
+			productName = WJLogTests;
+			productReference = DAB61777214BA240006D5F7A /* WJLogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAB61781214BA240006D5F7A /* WJLogUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAB61791214BA240006D5F7A /* Build configuration list for PBXNativeTarget "WJLogUITests" */;
+			buildPhases = (
+				DAB6177E214BA240006D5F7A /* Sources */,
+				DAB6177F214BA240006D5F7A /* Frameworks */,
+				DAB61780214BA240006D5F7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAB61784214BA240006D5F7A /* PBXTargetDependency */,
+			);
+			name = WJLogUITests;
+			productName = WJLogUITests;
+			productReference = DAB61782214BA240006D5F7A /* WJLogUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAB61757214BA23E006D5F7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "王俊";
+				TargetAttributes = {
+					DAB6175E214BA23E006D5F7A = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					DAB61776214BA240006D5F7A = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = DAB6175E214BA23E006D5F7A;
+					};
+					DAB61781214BA240006D5F7A = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = DAB6175E214BA23E006D5F7A;
+					};
+				};
+			};
+			buildConfigurationList = DAB6175A214BA23E006D5F7A /* Build configuration list for PBXProject "WJLog" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAB61756214BA23E006D5F7A;
+			productRefGroup = DAB61760214BA23E006D5F7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAB6175E214BA23E006D5F7A /* WJLog */,
+				DAB61776214BA240006D5F7A /* WJLogTests */,
+				DAB61781214BA240006D5F7A /* WJLogUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAB6175D214BA23E006D5F7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB617A6214BA26A006D5F7A /* Info.plist in Resources */,
+				DAB6176F214BA240006D5F7A /* LaunchScreen.storyboard in Resources */,
+				DAB6176C214BA240006D5F7A /* Assets.xcassets in Resources */,
+				DAB6176A214BA23E006D5F7A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB61775214BA240006D5F7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB61780214BA240006D5F7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAB6175B214BA23E006D5F7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB61767214BA23E006D5F7A /* ViewController.m in Sources */,
+				DAB617A1214BA26A006D5F7A /* FMDatabaseQueue.m in Sources */,
+				DAB617B4214BA274006D5F7A /* WJLogManager.m in Sources */,
+				DAB617B1214BA274006D5F7A /* WJDBManager.m in Sources */,
+				DAB61772214BA240006D5F7A /* main.m in Sources */,
+				DAB617A3214BA26A006D5F7A /* FMDatabase.m in Sources */,
+				DAB617B3214BA274006D5F7A /* WJLogModel.m in Sources */,
+				DAB617A4214BA26A006D5F7A /* FMDatabasePool.m in Sources */,
+				DAB61764214BA23E006D5F7A /* AppDelegate.m in Sources */,
+				DAB617A5214BA26A006D5F7A /* FMResultSet.m in Sources */,
+				DAB617B2214BA274006D5F7A /* WJLogDB.m in Sources */,
+				DAB617A2214BA26A006D5F7A /* FMDatabaseAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB61773214BA240006D5F7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB6177C214BA240006D5F7A /* WJLogTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB6177E214BA240006D5F7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB61787214BA240006D5F7A /* WJLogUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAB61779214BA240006D5F7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAB6175E214BA23E006D5F7A /* WJLog */;
+			targetProxy = DAB61778214BA240006D5F7A /* PBXContainerItemProxy */;
+		};
+		DAB61784214BA240006D5F7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAB6175E214BA23E006D5F7A /* WJLog */;
+			targetProxy = DAB61783214BA240006D5F7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAB61768214BA23E006D5F7A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAB61769214BA23E006D5F7A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAB6176D214BA240006D5F7A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAB6176E214BA240006D5F7A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAB61789214BA240006D5F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DAB6178A214BA240006D5F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAB6178C214BA240006D5F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WREVM94QNS;
+				INFOPLIST_FILE = WJLog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = myProject.WJLog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAB6178D214BA240006D5F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WREVM94QNS;
+				INFOPLIST_FILE = WJLog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = myProject.WJLog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DAB6178F214BA240006D5F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WREVM94QNS;
+				INFOPLIST_FILE = WJLogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = myProject.WJLogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WJLog.app/WJLog";
+			};
+			name = Debug;
+		};
+		DAB61790214BA240006D5F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WREVM94QNS;
+				INFOPLIST_FILE = WJLogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = myProject.WJLogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WJLog.app/WJLog";
+			};
+			name = Release;
+		};
+		DAB61792214BA240006D5F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WREVM94QNS;
+				INFOPLIST_FILE = WJLogUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = myProject.WJLogUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WJLog;
+			};
+			name = Debug;
+		};
+		DAB61793214BA240006D5F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WREVM94QNS;
+				INFOPLIST_FILE = WJLogUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = myProject.WJLogUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WJLog;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAB6175A214BA23E006D5F7A /* Build configuration list for PBXProject "WJLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB61789214BA240006D5F7A /* Debug */,
+				DAB6178A214BA240006D5F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAB6178B214BA240006D5F7A /* Build configuration list for PBXNativeTarget "WJLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB6178C214BA240006D5F7A /* Debug */,
+				DAB6178D214BA240006D5F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAB6178E214BA240006D5F7A /* Build configuration list for PBXNativeTarget "WJLogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB6178F214BA240006D5F7A /* Debug */,
+				DAB61790214BA240006D5F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAB61791214BA240006D5F7A /* Build configuration list for PBXNativeTarget "WJLogUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB61792214BA240006D5F7A /* Debug */,
+				DAB61793214BA240006D5F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAB61757214BA23E006D5F7A /* Project object */;
+}
